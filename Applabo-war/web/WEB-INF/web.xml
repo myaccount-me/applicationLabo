@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>connexionAdmin</servlet-name>
+        <servlet-class>serv.connexionAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>connexionlabo</servlet-name>
+        <servlet-class>serv.connexionlabo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removelabo</servlet-name>
+        <servlet-class>serv.removelabo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editlabo</servlet-name>
+        <servlet-class>serv.editlabo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connexionAdmin</servlet-name>
+        <url-pattern>/connexionAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>connexionlabo</servlet-name>
+        <url-pattern>/connexionlabo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removelabo</servlet-name>
+        <url-pattern>/removelabo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editlabo</servlet-name>
+        <url-pattern>/editlabo</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
